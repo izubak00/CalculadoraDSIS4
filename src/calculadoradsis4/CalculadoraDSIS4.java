@@ -309,7 +309,14 @@ public class CalculadoraDSIS4 extends javax.swing.JFrame {
     }//GEN-LAST:event_button1ActionPerformed
 
     private void buttonMultActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buttonMultActionPerformed
-
+        String valor = jTextPane1.getText();
+        val1 = Double.parseDouble(valor);
+        jLabel1.setText(valor + " * ");
+        sinal = 4;
+        jTextPane1.setText("0");
+        sinalS = "*";
+        verificaPonto = 1;
+        verificaVal = 1;
     }//GEN-LAST:event_buttonMultActionPerformed
 
     private void button9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_button9ActionPerformed
