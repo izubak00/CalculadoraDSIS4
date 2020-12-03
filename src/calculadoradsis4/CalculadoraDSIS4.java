@@ -162,6 +162,11 @@ public class CalculadoraDSIS4 extends javax.swing.JFrame {
         });
 
         buttonDiv.setText("/");
+        buttonDiv.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                buttonDivActionPerformed(evt);
+            }
+        });
 
         buttonMult.setText("*");
         buttonMult.addActionListener(new java.awt.event.ActionListener() {
@@ -458,6 +463,17 @@ public class CalculadoraDSIS4 extends javax.swing.JFrame {
         verificaPonto = 1;
         verificaVal = 1;
     }//GEN-LAST:event_buttonSubActionPerformed
+
+    private void buttonDivActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buttonDivActionPerformed
+        String valor = jTextPane1.getText();
+        val1 = Double.parseDouble(valor);
+        jLabel1.setText(valor + " / ");
+        sinal = 3;
+        jTextPane1.setText("0");
+        sinalS = "/";
+        verificaPonto = 1;
+        verificaVal = 1;
+    }//GEN-LAST:event_buttonDivActionPerformed
 
     /**
      * @param args the command line arguments
